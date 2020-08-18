@@ -26,6 +26,10 @@ nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
     display: flex;
 }
 
+nav a {
+    color: gray;
+}
+
 .banner {
     display: flex;
     background-color: gainsboro;
@@ -36,15 +40,27 @@ nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.learn h2 {
+    font-size: 3rem;
+}
+
+.learn p {
+    font-size: 1.5rem;
 }
 
 .banner .box {
-    background-color: black;
-    padding: 8px 24px;
+    background-color: gray;
+    padding: 8px 72px;
     font-size: 20px;
     color: white;
     text-align: center;
+}
+
+.box a {
+    color: white;
 }
 
 .orientation img, .campus img, .guest-lecture img, .fisma img, .now-and-then img {
@@ -57,6 +73,7 @@ nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
     width: 40%;
 }
 
+
 .group {
     display: flex;
     justify-content: space-between;
@@ -65,7 +82,7 @@ nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
 
 .group img {
     height: auto;
-    width: 90%;
+    width: 95%;
 }
 
 .orientation .wording, .campus .wording, .guest-lecture .wording, .fisma .wording, 
@@ -84,21 +101,22 @@ nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
     margin: 32px 24px;
 }
 
-.thesis-heading h2, .courses h2 {
+.thesis-exhibit h2, .courses h2 {
     text-align: center;
-    margin-top: 32px;
+    padding-top: 32px;
     margin-bottom: 32px;
 }
 
+
+.fisma, .guest-lecture, .courses {
+    background-color: gainsboro;
+}
+
 .thesis-heading p, .thesis-heading h3 {
-    margin: 24px;
+    margin-left: 24px;
 }
 
 footer {
     display: flex;
-    margin: 16px 24px;
-}
-
-footer p{
-    text-align: right;
+    padding: 16px 24px;
 }
