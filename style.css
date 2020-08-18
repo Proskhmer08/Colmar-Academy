@@ -1,1 +1,104 @@
+html {
+    color: gray;
+}
 
+header {
+    display: flex;
+    margin-left: 24px;
+    margin-right: 24px;
+    justify-content: space-between;
+}
+
+header img {
+    height: 64px;
+}
+
+header h2 {
+    margin-left: 0;
+}
+
+header span {
+    color: black;
+}
+
+nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
+.fisma, .now-and-then {
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    background-color: gainsboro;
+}
+
+.learn {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .box {
+    background-color: black;
+    padding: 8px 24px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.orientation img, .campus img, .guest-lecture img, .fisma img, .now-and-then img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.information .demo, .thesis-exhibit .demo {
+    width: 40%;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 72px;
+}
+
+.group img {
+    height: auto;
+    width: 90%;
+}
+
+.orientation .wording, .campus .wording, .guest-lecture .wording, .fisma .wording, 
+.now-and-then .wording {
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
+
+.wording a {
+    color: skyblue;
+}
+
+.banner img, .main-image img, .information img, .thesis-exhibit video{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.thesis-heading h2, .courses h2 {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.thesis-heading p, .thesis-heading h3 {
+    margin: 24px;
+}
+
+footer {
+    display: flex;
+    margin: 16px 24px;
+}
+
+footer p{
+    text-align: right;
+}
