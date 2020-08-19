@@ -143,17 +143,20 @@ nav a {
 
 /* courses section */
 
+.start-learning {
+    font-size: 2rem;
+    text-align: center;
+    background-color: gainsboro;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 32px;
+}
+
 .courses {
     display: flex;
     flex-wrap: wrap;
     padding: 32px 72px;
     background-color: gainsboro;
-}
-.courses h2 {
-    font-size: 2.0rem;
-    margin-bottom: 32px;
-    justify-content: center;
-    
 }
 
 .group h3 { /* this part is complete */
