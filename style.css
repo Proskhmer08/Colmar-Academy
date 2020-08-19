@@ -1,50 +1,84 @@
 html {
     color: gray;
+    border-style: groove; /*creating a line on the border*/
 }
 
+body {
+    margin: 0 auto; /*creating full width*/
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* header section */
+
 header {
-    display: flex;
+    display: inline-flex;
     margin-left: 24px;
     margin-right: 24px;
     justify-content: space-between;
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
 }
 
 header img {
-    height: 64px;
+    height: 64px; /*size of the icon*/
 }
 
-header h2 {
-    margin-left: 0;
+.title {
+    display: inline-flex;
+}
+
+.title h2 {
+    margin-right: 58rem;
+    height: 32px; /*How close the title to the icon */
 }
 
 header span {
     color: black;
 }
 
-nav, .information, .orientation, .campus, .guest-lecture, .thesis-exhibit,
-.fisma, .now-and-then {
-    display: flex;
+nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
 }
 
 nav a {
     color: gray;
 }
 
+/* banner section */
+
 .banner {
     display: flex;
     background-color: gainsboro;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.image {
+    min-width: 80%;
+    flex: 2 2;
 }
 
 .learn {
+    display: inline-flex;
     text-align: left;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding-right: 2rem;
+    flex: 1 2;
 }
 
 .learn h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .learn p {
@@ -63,42 +97,112 @@ nav a {
     color: white;
 }
 
-.orientation img, .campus img, .guest-lecture img, .fisma img, .now-and-then img {
-    width: 35%;
-    height: auto;
-    margin: 16px;
+/* Information Section */
+
+.information {
+    display: flex;
+    width: 70%;
+}
+
+.main-image img {
+    min-width: 93%;
+    flex-grow: 2;
+}
+
+.main-image h3 {
+    font-size: 1.75rem;
+    margin: 0 0 24px 24px;
+}
+
+.main-image p {
+    font-size: 1.2rem;
+    margin: 24px;
 }
 
 .information .demo, .thesis-exhibit .demo {
     width: 40%;
 }
 
+.information .demo {
+    border-style: ridge;
+}
 
-.group {
+.demo {
     display: flex;
-    justify-content: space-between;
-    margin: 32px 72px;
-}
-
-.group img {
-    height: auto;
-    width: 95%;
-}
-
-.orientation .wording, .campus .wording, .guest-lecture .wording, .fisma .wording, 
-.now-and-then .wording {
     flex-direction: column;
-    justify-content: center;
-    width: 65%;
+    margin-top: 16px;
+}
+
+.orientation, .campus, .guest-lecture {
+    display: flex;
 }
 
 .wording a {
     color: skyblue;
 }
 
-.banner img, .main-image img, .information img, .thesis-exhibit video{
-    width: 60%;
-    margin: 32px 24px;
+/* courses section */
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 72px;
+    background-color: gainsboro;
+}
+.courses h2 {
+    font-size: 2.0rem;
+    margin-bottom: 32px;
+    justify-content: center;
+    
+}
+
+.group h3 { /* this part is complete */
+    color: black;
+    padding: 16px 0 16px 16px;
+    margin: 0;
+}
+
+.group p {
+    padding: 8px 0 24px 16px;
+    margin: 0;
+    
+}
+
+.group {
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.group img {
+    height: auto;
+    width: 100%;
+}
+
+.group .type {
+    margin: 0;
+    padding: 0 0 0 16px;
+    text-align: left;
+}
+
+.software, .computer-art, .design, .data, .business, .marketing {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 16px solid gainsboro; /* creating border around element */
+    opacity: 85%;
+    
+}
+
+.software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover{
+    border: 1px solid gold;
+    
+}
+
+/* thesis exhibit section */
+
+.thesis-exhibit {
+    display: flex;
 }
 
 .thesis-exhibit h2, .courses h2 {
@@ -116,7 +220,36 @@ nav a {
     margin-left: 24px;
 }
 
+/* universal blocks */
+
+.orientation img, .campus img, .guest-lecture img, .fisma img, .now-and-then img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.banner img, .main-image img, .information img, .thesis-exhibit video{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.orientation .wording, .campus .wording, .guest-lecture .wording, .fisma .wording, 
+.now-and-then .wording {
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* footer */
+
 footer {
     display: flex;
     padding: 16px 24px;
+}
+
+footer a {
+    float: right;
+    padding: 16px 8px;
 }
