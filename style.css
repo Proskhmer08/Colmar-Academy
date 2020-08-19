@@ -204,40 +204,56 @@ nav a {
 
 /* thesis exhibit section */
 
-.thesis-exhibit {
-    display: flex;
-}
-
-.thesis-exhibit h2, .courses h2 {
+.thesis-title {
+    font-size: 2rem;
     text-align: center;
-    padding-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
+.thesis-exhibit {
+    display: flex;    
+}
+
+video {
+    width: 60%;
+    height: auto;
+    padding: 32px 24px 0 24px;
+    border-style: 1px solid;
+}
+
+.thesis-heading p {
+    padding: 8px 24px 32px 24px;
+    margin: 0;
+    font-size: 1.09rem;
+}
+
+.thesis-heading h3 {
+    margin: 0;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+/* universal blocks */
 
 .fisma, .guest-lecture, .courses {
     background-color: gainsboro;
 }
 
-.thesis-heading p, .thesis-heading h3 {
-    margin-left: 24px;
-}
-
-/* universal blocks */
-
-.orientation img, .campus img, .guest-lecture img, .fisma img, .now-and-then img {
+.orientation img, .campus img, .guest-lecture img, 
+.fisma img, .now-and-then img {
     width: 35%;
     height: auto;
     margin: 16px;
 }
 
-.banner img, .main-image img, .information img, .thesis-exhibit video{
+.banner img, .main-image img, .information img, 
+.thesis-exhibit {
     width: 60%;
     margin: 32px 24px;
 }
 
-.orientation .wording, .campus .wording, .guest-lecture .wording, .fisma .wording, 
-.now-and-then .wording {
+.orientation .wording, .campus .wording, .guest-lecture .wording, 
+.fisma .wording, .now-and-then .wording {
     flex-direction: column;
     justify-content: center;
     width: 65%;
@@ -247,12 +263,15 @@ nav a {
 
 /* footer */
 
-footer {
+footer  p{
     display: flex;
+    margin: 0;
     padding: 16px 24px;
+    width: 40%;
 }
 
-footer a {
+.terms {
+    display: flex;
     float: right;
     padding: 16px 8px;
 }
