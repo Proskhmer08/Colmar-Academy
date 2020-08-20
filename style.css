@@ -42,6 +42,11 @@ nav ul {
     justify-content: space-around;
 }
 
+nav {
+    
+    margin: 0;
+}
+
 li {
     list-style: none;
 }
@@ -60,6 +65,7 @@ nav a {
     background-size: cover;
     background-position: center;
     height: auto;
+    
 }
 
 .image {
@@ -67,7 +73,7 @@ nav a {
     flex: 2 2;
 }
 
-.learn {
+.banner-text {
     display: inline-flex;
     text-align: left;
     flex-direction: column;
@@ -75,13 +81,15 @@ nav a {
     align-items: center;
     padding-right: 2rem;
     flex: 1 2;
+    min-width: 20%;
+    border: 0.5px solid;
 }
 
-.learn h2 {
+.banner-text h2 {
     font-size: 2.5rem;
 }
 
-.learn p {
+.banner-text p {
     font-size: 1.5rem;
 }
 
@@ -257,7 +265,7 @@ nav a {
     margin: 16px;
 }
 
-.banner img, .main-image img, .information img {
+.banner img, .information img {
     width: 60%;
     margin: 32px 24px;
 }
@@ -291,5 +299,5 @@ footer a {
     float: right;
     padding-right: 24px;
     color: gray;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
