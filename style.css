@@ -125,9 +125,6 @@ nav a {
 
 .information .demo {
     border-style: ridge;
-}
-
-.demo {
     display: flex;
     flex-direction: column;
     margin-top: 16px;
@@ -197,28 +194,29 @@ nav a {
     
 }
 
-.software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover{
+/* .software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover{
     border: 1px solid gold;
-    
-}
+}    
+*/ 
 
 /* thesis exhibit section */
 
 .thesis-title {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 32px;
 }
 
 .thesis-exhibit {
-    display: flex;    
+    display: flex; 
+    justify-content: space-between;   
+    width: 70%;
 }
 
-video {
-    width: 60%;
+.thesis-heading img {
+    width: 90%;
     height: auto;
-    padding: 32px 24px 0 24px;
-    border-style: 1px solid;
+    padding: 0 24px 0 24px;
 }
 
 .thesis-heading p {
@@ -233,6 +231,19 @@ video {
     padding-left: 24px;
 }
 
+.thesis-exhibit .demo {
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fisma, .now-and-then {
+    display: flex;
+    min-width: 400px;
+    height: auto;
+}
+
+
 /* universal blocks */
 
 .fisma, .guest-lecture, .courses {
@@ -246,8 +257,7 @@ video {
     margin: 16px;
 }
 
-.banner img, .main-image img, .information img, 
-.thesis-exhibit {
+.banner img, .main-image img, .information img {
     width: 60%;
     margin: 32px 24px;
 }
@@ -263,15 +273,23 @@ video {
 
 /* footer */
 
-footer  p{
-    display: flex;
+footer {
+    padding-top: 16px;
+    height: 50px;
     margin: 0;
-    padding: 16px 24px;
-    width: 40%;
 }
 
-.terms {
-    display: flex;
+footer p {
+    padding-top: 16px;
+    padding-left: 24px;
+    margin: 0;
+    border-top: 1px solid gainsboro;
+}
+/* float right with a{} allows the words to be placed
+on the right. Padding-right puts space between words.*/
+footer a {
     float: right;
-    padding: 16px 8px;
+    padding-right: 24px;
+    color: gray;
+    font-size: 1.1rem;
 }
