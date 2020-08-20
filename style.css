@@ -130,16 +130,14 @@ nav a {
     color: white;
     text-align: center;
     width: 450px;
-    border-color: #d8d8d8;
-}
-.banner a:visited {
-    color: #238279;
     border-color: #238279;
+    /*border-radius: 20px; Making the button an oval*/
 }
 
 .button:hover {
-    background-color: white;
-    color: #238279;
+    background-color: #1c6760;
+    color: white;
+    cursor: pointer;
 }
 
 /* Information Section */
@@ -350,4 +348,37 @@ footer a {
     color:#868786;
     font-size: 1.05rem;
     text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width:1300px) {
+    html{
+        display: flex;
+        border-style: none;
+        
+    }
+}
+
+@media only screen and (min-width: 1100px) and 
+(max-width: 1299px) {
+    html{
+        display: flex;
+        
+    }
+}
+
+@media only screen and (min-width: 900px) and
+(max-width:1099px) {
+    html {
+        display: flex;
+       
+    }
+}
+
+@media only screen and (min-width: 700px) and
+(max-width: 899px) {
+    html {
+        display: flex;
+        
+    }
 }
