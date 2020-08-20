@@ -1,5 +1,5 @@
 html {
-    color: gray;
+    color: #4a4a4a;
     border-style: groove; /*creating a line on the border*/
 }
 
@@ -31,6 +31,7 @@ header img {
 .title h2 {
     margin-right: 54rem;
     height: 32px; /*How close the title to the icon */
+    color: #9b9b9b
 }
 
 header span {
@@ -61,14 +62,13 @@ nav a {
 
 .banner {
     display: flex;
-    background-color: gainsboro;
+    background-color: #d8d8d8;
     background-size: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: auto;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 .image {
@@ -103,6 +103,7 @@ nav a {
     text-align: left;
 }
 
+/*
 .banner .box {
     background-color: #238279;
     padding: 8px 50px;
@@ -115,19 +116,47 @@ nav a {
 .box a {
     color: white;
     background-size: 3rem;
-    text-decoration: none; /* Removing underline from link */
+
+    text-decoration: none; 
+}
+*/
+/* Removing underline from link */
+
+.button {
+    background-color: #238279;
+    background-size: 3rem;
+    padding: 8px 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 450px;
+    border-color: #d8d8d8;
+}
+.banner a:visited {
+    color: #238279;
+    border-color: #238279;
+}
+
+.button:hover {
+    background-color: white;
+    color: #238279;
 }
 
 /* Information Section */
 
 .information {
     display: flex;
-    width: 70%;
+    /* width: 70%; */
+}
+
+.main-image {
+    max-width:60%;
 }
 
 .main-image img {
-    min-width: 93%;
+    max-width: 94%;
     flex-grow: 2;
+    padding: 32px 24px;
 }
 
 .main-image h3 {
@@ -156,7 +185,8 @@ nav a {
 }
 
 .wording a {
-    color: skyblue;
+    color: #5896e5;
+    text-decoration: none;
 }
 
 /* courses section */
@@ -164,7 +194,7 @@ nav a {
 .start-learning {
     font-size: 2rem;
     text-align: center;
-    background-color: gainsboro;
+    background-color: #d8d8d8;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 32px;
@@ -174,7 +204,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     padding: 32px 72px;
-    background-color: gainsboro;
+    background-color: #d8d8d8;
 }
 
 .group h3 { /* this part is complete */
@@ -210,34 +240,35 @@ nav a {
     background-color: white;
     margin: 0;
     padding: 0;
-    border: 16px solid gainsboro; /* creating border around element */
+    border: 16px solid #d8d8d8; /* creating border around element */
     opacity: 85%;
     
 }
 
-/* .software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover{
-    border: 1px solid gold;
+.software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover{
+    border: 1px solid black;
 }    
-*/ 
+
 
 /* thesis exhibit section */
 
 .thesis-title {
     font-size: 2rem;
     text-align: center;
+    margin-top:32px;
     margin-bottom: 32px;
 }
 
 .thesis-exhibit {
     display: flex; 
     justify-content: space-between;   
-    width: 70%;
+   /*width: 70%;*/
 }
 
 .thesis-heading img {
-    width: 90%;
+    width: 94%;
     height: auto;
-    padding: 0 24px 0 24px;
+    padding: 0 0 0 24px;
 }
 
 .thesis-heading p {
@@ -268,7 +299,7 @@ nav a {
 /* universal blocks */
 
 .fisma, .guest-lecture, .courses {
-    background-color: gainsboro;
+    background-color: #d8d8d8;
 }
 
 .orientation img, .campus img, .guest-lecture img, 
@@ -278,10 +309,10 @@ nav a {
     margin: 16px;
 }
 
-.information img {
+/* .information img {
     width: 94%;
     margin: 32px 24px;
-}
+} */
 
 .orientation .wording, .campus .wording, .guest-lecture .wording, 
 .fisma .wording, .now-and-then .wording {
@@ -290,6 +321,10 @@ nav a {
     width: 65%;
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.information p, .courses p, .thesis-exhibit p {
+    color: #868786;
 }
 
 /* footer */
@@ -304,13 +339,15 @@ footer p {
     padding-top: 16px;
     padding-left: 24px;
     margin: 0;
-    border-top: 1px solid gainsboro;
+    border-top: 1px solid #d8d8d8;
+    color: #868786
 }
 /* float right with a{} allows the words to be placed
 on the right. Padding-right puts space between words.*/
 footer a {
     float: right;
     padding-right: 24px;
-    color: gray;
+    color:#868786;
     font-size: 1.05rem;
+    text-decoration: none;
 }
