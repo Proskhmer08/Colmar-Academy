@@ -29,7 +29,7 @@ header img {
 }
 
 .title h2 {
-    margin-right: 58rem;
+    margin-right: 54rem;
     height: 32px; /*How close the title to the icon */
 }
 
@@ -53,6 +53,8 @@ li {
 
 nav a {
     color: gray;
+    text-decoration: none;
+    padding-right: 24px;
 }
 
 /* banner section */
@@ -65,44 +67,55 @@ nav a {
     background-size: cover;
     background-position: center;
     height: auto;
+    box-sizing: border-box;
     
 }
 
 .image {
-    min-width: 80%;
     flex: 2 2;
+    max-width: 60%;
+}
+
+.banner img {
+    width: 94%;
+    margin: 32px 0 32px 24px;
 }
 
 .banner-text {
-    display: inline-flex;
+    padding-top: 10rem;
     text-align: left;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-right: 2rem;
     flex: 1 2;
-    min-width: 20%;
-    border: 0.5px solid;
+    padding-left: 8px;
+    flex-wrap: wrap;
 }
 
 .banner-text h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 0;
 }
 
 .banner-text p {
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .banner .box {
-    background-color: gray;
-    padding: 8px 72px;
+    background-color: #238279;
+    padding: 8px 50px;
     font-size: 20px;
     color: white;
     text-align: center;
+    width: 346px;
 }
 
 .box a {
     color: white;
+    background-size: 3rem;
+    text-decoration: none; /* Removing underline from link */
 }
 
 /* Information Section */
@@ -265,8 +278,8 @@ nav a {
     margin: 16px;
 }
 
-.banner img, .information img {
-    width: 60%;
+.information img {
+    width: 94%;
     margin: 32px 24px;
 }
 
