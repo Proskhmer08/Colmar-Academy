@@ -221,6 +221,7 @@ nav a {
     display: inline-flex;
     justify-content: space-around;
     align-content: center;
+    
 }
 
 .group img {
@@ -240,7 +241,7 @@ nav a {
     padding: 0;
     border: 16px solid #d8d8d8; /* creating border around element */
     opacity: 85%;
-    
+   
 }
 
 .software:hover, .computer-art:hover, .design:hover, .data:hover, .business:hover, .marketing:hover{
@@ -351,34 +352,360 @@ footer a {
 }
 
 /* Media Queries */
-@media only screen and (max-width:1300px) {
-    html{
-        display: flex;
+
+@media only screen and (min-width:1301px) {
+    html {
+        margin: auto;
+    }
+}
+@media only screen and (min-width:1070px) 
+and (max-width: 1300px){
+    .title h2 {
+        margin:auto;
+    }
+    .banner{
+        margin: auto;
+    }
+    .banner-text {
+        padding-top: 7rem;
+    }
+
+    .banner h2 {
+        font-size: 2.7rem;
+    }
+
+    .button {
+        width: 360px;
+    }
+}
+
+/* ipad size */
+@media only screen and (min-width:950px) 
+and (max-width: 1099px) {
+    .title h2{
+        margin: auto;
+    }
+    .banner-text {
+        padding-top: 5rem;
+    }
+    .banner-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        width: 320px;
+    }
+
+    .fisma, .now-and-then {
+        min-width: 380px;
+    }
+}
+
+@media only screen and (min-width: 800px)
+and (max-width: 949px) {
+    html {
         border-style: none;
-        
+    }
+
+    header {
+        margin-left: 16px;
+    }
+
+    .title h2 {
+        margin: auto;
+    }
+    .banner-text {
+        padding-top: 5rem;
+    }
+
+    .banner img {
+        margin-left: 8px;
+    }
+
+    .banner-text h2{
+        font-size: 1.9rem;
+    }
+
+    .banner p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 1.3rem;
+    }
+
+    .button {
+        width: 250px;
+        font-size: 1.15rem;
+    }
+
+    .main-image img {
+        padding-left: 8px;
+    }
+
+    .main-image h3 {
+        margin-left: 8px
+    }
+
+    .wording h3 {
+        font-size: 1.02rem;
+    }
+
+    .wording p {
+        font-size: 0.9rem;
+    }
+
+    .main-image p {
+        margin-left: 8px;
+    }
+
+    .thesis-heading img {
+        padding-left: 8px;
+    }
+
+    .thesis-heading h3 {
+        padding-left: 8px;
+    }
+
+    .thesis-heading p {
+        padding-left: 8px;
+    }
+
+    .fisma, .now-and-then {
+        min-width: 320px;
+    }
+
+    footer p {
+        padding-left: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 630px) 
+and (max-width: 799px) {
+
+    header {
+        margin-left: 4px;
+    }
+    .title h2 {
+        margin: auto;
+    }
+
+    .banner img {
+        margin: 8px;
+    }
+
+    .banner-text{
+        padding-top: 4rem;
+    }
+    .banner-text h2 {
+        font-size: 1.3rem;
+        padding-left: 8px;
+    }
+
+    .banner p {
+        font-size: 1.09rem;
+        padding-left: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .button {
+        margin-left: 8px;
+        width: 195px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .main-image img {
+        padding-left: 8px;
+        padding-bottom: 8px;
+    }
+
+    .main-image h3 {
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+
+    .main-image p {
+        margin-left: 8px;
+    }
+
+    .campus, .guest-lecturer, .orientation {
+        min-width: auto;
+    }
+
+    .orientation img, .campus img, .guest-lecture img {
+        width: 35%;
+        height: 120px;
+        margin: 13px 10px 10px 10px;
+    }   
+
+    .wording h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .wording p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .start-learning {
+        font-size: 1.6rem;
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    .courses {
+        padding-top: 16px;
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+
+    .thesis-title {
+        font-size: 1.6rem;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .thesis-heading img {
+        padding-left: 8px;
+    }
+    
+    .thesis-heading h3 {
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+
+    .thesis-heading p {
+        padding-left: 8px;
+    }
+     
+    .fisma, .now-and-then {
+        min-width: auto;
+    }
+    .fisma img, .now-and-then img {
+        width: 25%;
+    }
+
+    .fisma h3, .now-and-then h3 {
+        font-size: 0.9rem;
     }
 }
 
-@media only screen and (min-width: 1100px) and 
-(max-width: 1299px) {
-    html{
-        display: flex;
-        
-    }
-}
-
-@media only screen and (min-width: 900px) and
-(max-width:1099px) {
+@media only screen and (max-width: 630px)
+{   
     html {
-        display: flex;
-       
+        margin: auto;
+        min-width: 150px;
     }
-}
 
-@media only screen and (min-width: 700px) and
-(max-width: 899px) {
-    html {
+    nav ul {
+        font-size: 0.57rem;
+    }
+
+    .title {
         display: flex;
-        
+        max-width: 300px;
+    }
+
+    .title h2 {
+        margin: auto;
+    }
+
+    .image img {
+        position: hidden;
+        width: 91%;
+    }
+
+    .banner-text {
+        min-width: 100px;
+        padding-top: 100px;
+    }
+
+    .banner-text h2 {
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
+
+    .banner-text p {
+        font-size: 0.79rem;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .button {
+        width: 120px;
+        font-size: 10px;
+        padding: 1px 6px;
+    }
+
+    .main-image img {
+        padding-bottom: 16px;
+        max-width:91%;
+    }
+
+    .main-image h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .main-image p {
+        margin-top: 8px;
+        font-size: 1.0rem;
+    }
+
+    .orientation img {
+        margin-top: 14px;
+    }
+
+    .orientation img, .campus img,
+    .guest-lecture img {
+        height: 100px;
+    }
+
+    .demo img {
+        height: 80px;
+    }
+
+    .wording h3 {
+        font-size: 0.8rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .wording p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-size: 0.7rem;
+    }
+
+    .courses {
+        padding-top: 8px;
+    }
+
+    .software, .computer-art, .design,
+    .data, .business, .marketing {
+        height: 200px;
+    }
+
+    .group h3 {
+        font-size: 0.7rem;
+        text-align: left;
+        padding-bottom: 8px;
+    }
+
+    .group p {
+        font-size: 0.6rem;
+    }
+
+    .thesis-title, .start-learning {
+        font-size: 1.6rem;
+    }
+    .thesis-heading img {
+        width: 92%;
+    }
+
+    .fisma, .now-and-then {
+        min-width: auto;
     }
 }
