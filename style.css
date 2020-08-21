@@ -20,6 +20,13 @@ header {
     align-items: center;
 }
 
+.mobile-nav {
+    visibility: hidden;
+    position: relative;
+    width:0px;
+    height:0px;
+}
+
 header img {
     height: 64px; /*size of the icon*/
 }
@@ -214,14 +221,12 @@ nav a {
 .group p {
     padding: 8px 0 24px 16px;
     margin: 0;
-    
 }
 
 .group {
     display: inline-flex;
     justify-content: space-around;
     align-content: center;
-    
 }
 
 .group img {
@@ -708,4 +713,126 @@ and (max-width: 799px) {
     .fisma, .now-and-then {
         min-width: auto;
     }
+}
+@media only screen and (max-width:630px) {
+
+    html {
+        width:100%;
+    }
+    header {
+        width: 64px;
+        right: 0px;
+    }
+
+    .hidden {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .title {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .desktop-nav {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .mobile-nav {
+        visibility: visible;
+        list-style: none;
+        right: 0px;
+        display: grid;
+        /* Set the spacing on the header */
+        grid-column-start: 0px;
+        width: 100%;
+        align-items: center;
+        height: 64px;
+        position: absolute;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .banner {
+        display: block;
+        max-width:100%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .banner-text {
+        padding-top: 0;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .main-image, .main-image h3, 
+    .main-image p {
+        display: hidden;
+        position: relative;
+        width: 0px;
+        height: 0px;
+    }
+
+    .information h3 {
+        display: hidden;
+    }
+
+    .orientation, .campus, .guest-lecture {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start-learning, .thesis-title {
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .software img, .computer-art img,
+    .design img, .data img, .business img,
+    .marketing img {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .thesis-exhibit {
+        min-width: 100%;
+    }
+
+    .thesis-heading img {
+        width: 100%;
+    }
+
+    .thesis-heading h3, .thesis-heading p {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .demo .fisma, .demo .now-and-then {
+        visibility: hidden;
+        position: relative;
+    }
+
+    footer a {
+        visibility: hidden;
+        position: relative;
+    }
+    
 }
