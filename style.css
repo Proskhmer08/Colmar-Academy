@@ -718,6 +718,7 @@ and (max-width: 799px) {
 
     html {
         width:100%;
+        
     }
     header {
         width: 64px;
@@ -753,7 +754,7 @@ and (max-width: 799px) {
         padding-right: 24px;
         padding-left: 24px;
     }
-
+    /* banner section */
     .banner {
         display: block;
         max-width:100%;
@@ -763,9 +764,14 @@ and (max-width: 799px) {
         
     }
 
-    .image img {
-        max-width: 100%;
+    .image {
+        width: 100%;
         height: auto;
+    }
+
+    .image img {
+        width: 630px;
+        height: 350px;
         margin: 0;
     }
 
@@ -773,26 +779,39 @@ and (max-width: 799px) {
         padding-top: 0;
     }
 
-    .information {
-        width: 100%;
+    .banner-text h2 {
+        font-size: 3rem;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 16px;
     }
 
-    .main-image, .main-image h3, 
-    .main-image p {
-        display: hidden;
-        position: relative;
-        width: 0px;
-        height: 0px;
+    .banner-text p {
+        font-size: 2rem;
+        margin-top: 0;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        margin-bottom: 0;
     }
 
-    .information h3 {
-        display: hidden;
+    .button {
+        width: 600px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    /* information section */
+    .main-image {
+        
     }
 
     .orientation, .campus, .guest-lecture {
         display: flex;
         flex-direction: column;
     }
+
+    /* courses section */
 
     .start-learning, .thesis-title {
         padding-top: 32px;
