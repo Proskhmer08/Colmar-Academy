@@ -718,6 +718,7 @@ and (max-width: 799px) {
 
     html {
         width:100%;
+       
         
     }
     header {
@@ -802,10 +803,64 @@ and (max-width: 799px) {
     }
 
     /* information section */
+    .information {
+        display: block;
+    }
     .main-image {
-        
+        visibility: hidden;
+        position: relative;
+        width: 0px;
+        height: 0px;
     }
 
+    .demo {
+        border-style: none;
+    }
+
+    .demo img {
+        margin: 0;
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 590px;
+        height: 300px;
+    }
+
+    .demo h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        padding-left: 32px;
+        padding-top: 64px;
+        width: 300px;
+    }
+
+    .demo p {
+        font-size: 1.9rem;
+        width: 500px;
+        margin: 0;
+        padding-top: 16px;
+        padding-left: 32px;
+    }
+
+    .campus img {
+        padding-top: 64px;
+    }
+
+    .guest-lecture {
+        background-color: white;
+    }
+
+    .guest-lecture img {
+        padding-top: 64px;
+        height: 380px;
+    }
+
+    .wording {
+        width: 500px;
+    }
+
+    /* start learning section */
+    
     .orientation, .campus, .guest-lecture {
         display: flex;
         flex-direction: column;
