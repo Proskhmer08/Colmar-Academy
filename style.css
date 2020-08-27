@@ -358,10 +358,11 @@ footer a {
 
 /* Media Queries */
 @media only screen and (min-width:1301px) {
-    .title h2 {
-        margin: auto;
+    html {
+        overflow-x: hidden;
     }
 }
+
 @media only screen and (min-width:1070px) 
 and (max-width: 1300px){
     .title h2 {
@@ -409,6 +410,7 @@ and (max-width: 1099px) {
 and (max-width: 949px) {
     html {
         border-style: none;
+        overflow-x: hidden;
     }
 
     header {
@@ -485,6 +487,10 @@ and (max-width: 949px) {
 
 @media only screen and (min-width: 630px) 
 and (max-width: 799px) {
+
+    html {
+        overflow-x: hidden;
+    }
 
     header {
         margin-left: 4px;
@@ -600,7 +606,7 @@ and (max-width: 799px) {
 @media only screen and (max-width: 630px)
 {   
     html {
-        min-width: 150px;
+        overflow-x: hidden;
     }
 
     nav ul {
@@ -717,8 +723,6 @@ and (max-width: 799px) {
 
     html {
         overflow-x: hidden;
-        
-        
     }
     header {
         width: 64px;
@@ -770,7 +774,7 @@ and (max-width: 799px) {
     }
 
     .image img {
-        width: 625px;
+        width: 624px;
         height: 350px;
         margin: 0;
     }
