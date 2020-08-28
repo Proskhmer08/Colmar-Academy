@@ -499,6 +499,10 @@ and (max-width: 949px) {
         min-width: 320px;
     }
 
+    .fisma img, .now-and-then img {
+        height: 100px;
+    }
+
     footer p {
         padding-left: 8px;
     }
