@@ -364,8 +364,10 @@ footer a {
 
 /* Media Queries */
 @media only screen and (min-width: 1435px) {
-    html {
+    html, body { /* adding body solves issues
+        with overflow-x not working on @Safari */
         overflow-x: hidden;
+        position: relative;
     }
 }
 
@@ -506,8 +508,10 @@ and (max-width: 949px) {
 @media only screen and (min-width: 630px) 
 and (max-width: 799px) {
 
-    html {
+    html, body { /*solve issues for overflow
+        on Safari */
         overflow-x: hidden;
+        position: relative;
     }
 
     header {
@@ -614,6 +618,7 @@ and (max-width: 799px) {
     }
     .fisma img, .now-and-then img {
         width: 25%;
+        height: 100px; /* solve issues for Safari */
     }
 
     .fisma h3, .now-and-then h3 {
