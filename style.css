@@ -212,6 +212,12 @@ nav a {
     background-color: #d8d8d8;
 }
 
+.mobile-courses {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
 .group h3 { /* this part is complete */
     color: black;
     padding: 16px 0 16px 16px;
@@ -357,6 +363,12 @@ footer a {
 }
 
 /* Media Queries */
+@media only screen and (min-width: 1435px) {
+    html {
+        overflow-x: hidden;
+    }
+}
+
 @media only screen and (min-width:1301px) 
 and (max-width: 1434px) {
     html {
@@ -728,7 +740,8 @@ and (max-width: 799px) {
 @media only screen and (max-width:630px) {
 
     html {
-        overflow-x: hidden;
+        
+        background-color: white;
     }
     header {
         width: 64px;
@@ -882,25 +895,57 @@ and (max-width: 799px) {
 
     /* courses section */
 
-    .start-learning, .thesis-title {
-    
+    .start-learning {
+        background-color: white;
+        font-size: 2.2rem;
+        margin: 0;
     }
 
     .courses {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        background-color: white;
+        padding: 0;
+        height:350px;
     }
 
-    .software img, .computer-art img,
-    .design img, .data img, .business img,
-    .marketing img {
-        position: relative;
+    .group {
         visibility: hidden;
+        width: 0;
+    }
+
+    .mobile-courses {
+        visibility: visible;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .mobile h3 {
+        background-color: #d8d8d8;
+        background-size: contain;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        padding-left: 32px;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 557px;
+        height: auto;
+        font-size: 1.25rem;
+    }
+
+    .mobile a {
+        text-decoration: none;
+        color: #4a4a4a;
+    }
+
+    .thesis-title {
+        margin-top: 180px;
+        font-size: 2.2rem;
     }
 
     .thesis-exhibit {
-        min-width: 100%;
+        overflow-x: hidden;
         overflow-y: hidden;
         height:280px;
     }
@@ -910,7 +955,6 @@ and (max-width: 799px) {
         height: 350px;
         padding-left: 16px;
         padding-right: 16px;
-
     }
 
     .thesis-heading h3, .thesis-heading p {
