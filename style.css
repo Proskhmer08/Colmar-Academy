@@ -357,14 +357,20 @@ footer a {
 }
 
 /* Media Queries */
-@media only screen and (min-width:1301px) {
+@media only screen and (min-width:1301px) 
+and (max-width: 1434px) {
     html {
         overflow-x: hidden;
+    }
+
+    .title h2 {
+        margin: auto;
     }
 }
 
 @media only screen and (min-width:1070px) 
 and (max-width: 1300px){
+
     .title h2 {
         margin:auto;
     }
@@ -387,7 +393,7 @@ and (max-width: 1300px){
 /* ipad size */
 @media only screen and (min-width:950px) 
 and (max-width: 1099px) {
-    .title h2{
+    .title h2 {
         margin: auto;
     }
     .banner-text {
