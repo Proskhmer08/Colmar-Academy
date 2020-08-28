@@ -916,6 +916,8 @@ and (max-width: 799px) {
         visibility: visible;
         margin-top: 16px;
         margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile h3 {
@@ -926,17 +928,23 @@ and (max-width: 799px) {
         padding-left: 32px;
         align-content: center;
         justify-content: space-between;
-        margin-bottom: 8px;
         margin-left: 16px;
+        margin-bottom: 0;
         margin-right: 16px;
         width: 557px;
         height: auto;
         font-size: 1.25rem;
-    }
+        flex-basis: auto;
+    } 
 
     .mobile a {
         text-decoration: none;
         color: #4a4a4a;
+    }
+
+    .mobile:hover {
+        border: 1px solid black;
+        cursor: pointer;
     }
 
     .thesis-title {
